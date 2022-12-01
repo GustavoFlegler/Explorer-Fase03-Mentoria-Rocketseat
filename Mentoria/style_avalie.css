@@ -1,0 +1,256 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 107px;
+}
+
+body::before{
+  position: absolute;
+  display: block;
+  content: '';
+  z-index: -1;
+
+  width: 100%;
+  height: 465px;
+  top: 0;
+  left: 0;
+
+  background: #293241;
+}
+
+body{
+  font-family: 'Poppins';
+  background: #BFD7E4 ;
+
+  width: 750px;
+  margin: auto;
+}
+
+form{
+  background: white;
+  border-radius: 0 0 20px 20px;
+
+  margin: 0 auto 392px;
+
+  padding: 30px 64px 64px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset{
+  border: none;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h1, legend{
+  text-transform: uppercase;
+  font-family: 'Staatliches';
+}
+
+legend{
+  font-size: 24px;
+  line-height: 34px;
+  color: #253B51;
+
+  text-align: center;
+
+  border-bottom: 1px solid #E6E6F0;
+  width: 100%;
+  padding-bottom: 10px;
+
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+
+h1{
+  font-size: 36px;
+  line-height: 45px;
+  color: #FFFFFF;
+}
+
+h2{
+  font-family: 'Staatliches';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: #FFFFFF;
+
+  background: #F67669;
+  border-radius: 20px 20px 0 0;
+
+  height: 133px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+
+  margin-top: 32px;
+}
+
+p{
+  color: white;
+  font-size: 16px;
+  line-height: 24px;
+
+  height: 46px;
+}
+
+label{
+  font-size: 14px;
+  line-height: 24px;
+  color: #4E4958;
+}
+
+.input_wrapper input,
+.input_wrapper select,
+.input_wrapper textarea
+{
+  border: none;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+
+  width: 100%;
+  height: 55px;
+
+  padding: 5px 10px;
+}
+
+.input_wrapper textarea{
+  height: 166px;
+}
+
+.form_name{
+  display: flex;
+  gap: 22px;
+}
+
+.form_name input{
+  width: 300px;
+}
+
+.input_date{
+  display: flex;
+}
+
+.input_date_wrapper{
+  margin-right: 32px;
+  width: 300px;
+}
+
+.input_time_wrapper{
+  display: flex;
+  gap: 10px;
+}
+
+.input_time_wrapper input{
+  width: 140px;
+}
+
+.footer{
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 60px;
+}
+
+button, a{
+  font-family: 'Staatliches';
+  font-size: 20px;
+  line-height: 26px;
+  color: white;
+
+  width: 600px;
+  height: 55px;
+
+  margin-bottom: 10px;
+
+  background: #F67669;
+  border: none;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+button:hover, a:hover{
+  background: #e2594a;
+}
+
+img{
+  width: 225px;
+  height: 100px;
+
+  margin-top: 2px
+}
+
+.checkbox_wrapper{
+  position: relative;
+}
+
+.checkbox_wrapper label{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox_wrapper input{
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 24px;
+  height: 24px;
+  
+  opacity: 0;
+}
+
+.checkbox_wrapper input:focus + label::before{
+  outline: auto;
+}
+
+.checkbox_wrapper label::before{
+  content: '';
+  display: block;
+  width: 24px;
+  height: 24px;
+  
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+}
+
+.checkbox_wrapper input:checked + label::before{
+  background-image: url("data:image/svg+xml,%3Csvg width='18' height='14' viewBox='0 0 18 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 11.17L1.83 7L0.410004 8.41L6 14L18 2L16.59 0.589996L6 11.17Z' fill='%2342D3FF'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+input:required:not(:placeholder-shown):invalid  {
+  border: 2px solid #c9001b;
+}
+
+span, input::placeholder{
+  font-size: 12px;
+  line-height: 20px;
+
+  color: #C1BCCC;
+}
+
+span:hover{
+  color:  #58565e;
+}
